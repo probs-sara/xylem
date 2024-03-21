@@ -279,11 +279,6 @@ header {
 
 }
 
-.item-hover-overlay:hover {
-    /* opacity: 1; */
-}
-
-
 .regular-box h1 {
     font-size: 4vh;
 }
