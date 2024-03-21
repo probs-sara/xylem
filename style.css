@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ZEROING CODE -- ensures consistency across browsers */ 
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', 'Helvetica Neue',  'Helvetica', 'Arial', sans-serif;
+}
+
+/* FOR BIG TITLES -- ex The Valley's Sweetest Conference */
+h1 {
+    font-weight: 700;
+    font-size: 7vh;
+    margin-bottom: 2vh;
+
+
+
+}
+
+/* FOR SECTION HEADERS -- ex Featured Bakeries*/
+h2 {
+    font-weight: 600;
+    font-size: 5.5vh;
+    margin-bottom: 2vh;
+  
+}
+
+/* FOR SECTION DESCRIPTIONS */
+h3 {
+    font-weight: 300;
+    font-size: 3.25vh;
+    margin-bottom: 5vh;
+}
+
+h4 {
+
+    font-weight: 600;
+    font-size: 3.25vh;
+    margin-bottom: 2vh;
+    color: #006400;
+
+}
+
+
+p {
+    font-weight: 300;
+    font-size: 3vh;
+    margin-bottom: 5vh;
+}
+
+
+
+
+.button {
+    border: 5px #006400 solid;
+    background-color: #006400;
+    color: white;
+    /* padding: 8px 30px; */
+    padding: .5vh 2vh;
+    
+    border-radius: 5px;
+    text-decoration:none;
+    
+    margin-bottom: 5vh;
+    /* margin: 2vh; */
+
+}
+
+
+
+
+.desk-only {
+    /* hides the images on mobile version */
+    display: none;
+} 
+
+.gray-section {
+    background-color: #f8f9fa;
+   
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    font-size: 20px;
+    padding: 5vh;
+}
+
+
+
+/* - mobile version */
+.style-logo {
+    /* center the logo */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.footer-logo-section {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 0;
+
+}
+
+.footer-logo {
+ 
+    width: 100%;
+    /* justify-content: center; */
+}
+
+
+.style-nav ul {
+    list-style-type: none;
+
+}
+
+.style-nav ul li a {
+    text-decoration: none;
+    color: #006400;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* -- this helps set up the grid view */
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/* FOR ALL OF THE DIFFERENT SECTIONS */
+/* -- for the top banner */
+.top-banner {
+    background-color: white;
+    background-size: cover;
+    /* padding: top right bottom left */ 
+    /* padding: 20px 30px 50px 30px; */
+    padding: 2vh 5vh 10vh 5vh;
+    /* figure out how to decrease line height on mobile*/ 
+    text-align: center;
+}
+
+.countdown-box {
+    color: black;
+    /* padding: 30px 20px 60px; */
+    /* padding: 3vh 3vh 6vh 3vh; */
+
+    padding: 15vh 5vh 15vh 5vh;
+    text-align: center;
+}
+
+/* GENERAL SECTION SIZING */ 
+.general-box {
+    padding: 10vh 5vh 10vh 5vh;
+    text-align: center;
+}
+
+
+.general-box h1 {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.general-box h2 {
+    margin-bottom: 1.5vh;
+
+}
+
+
+/* GREEN HOVER BOXES */
+
+
+.g-hover-img {
+    display: block;
+    width: 100%;   /* ensures that the image takes up its full given space */
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.g-hover-container a {
+    /* position: relative;  */
+    text-decoration: none;
+    color: inherit;
+}
+
+.g-hover-container p {
+    margin-bottom: 0;
+    color: #006400;
+}
+
+.fun-fact-overlay {
+    border: #006400 4px solid;
+    width: 100%;
+    margin-bottom: 5vh;
+    padding: 4vh;
+    text-align: center;
+ 
+   
+}
+
+.fun-fact-overlay:hover {
+    background-color: #006400;
+}
+
+.fun-fact-overlay h1 {
+    font-weight: 700;
+    font-size: 7vh;
+    color: #006400;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.fun-fact-overlay:hover h1 {
+    color: white;
+}
+
+.fun-fact-overlay:hover p {
+    color: white; 
+}
+
+
+/* ITEM-HOVER */ 
+
+.item-hover-container {
+
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 3vh;
+
+}
+
+.item-hover-container p {
+    margin-bottom: 0;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    margin-top: 0;
+
+}
+
+.item-hover-img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.item-hover-overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 97, 43, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    /* opacity: 0; */
+
+}
+
+.item-hover-overlay:hover {
+    /* opacity: 1; */
+}
+
+
+.regular-box h1 {
+    font-size: 4vh;
+}
+
+
+
+
+/* CIRCLE LIST ITEMS */
+
+.entire-list {
+    display: flex;
+    margin-left: 5vh;
+
+
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.circle-list-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: left;
+
+
+}
+
+.circle-list-row {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    
+
+}
+
+.circle-img img {
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    object-fit: cover;
+
+}
+
+.circle-text {
+    display: flex;
+    margin-top: .5vh;
+    margin-left: 2vh;
+    text-align: left;
+
+}
+
+.footer {
+    padding: 5vh 0;
+    background-color: white;
+}
+
+.footer .social {
+    margin-top: 1vh;
+    text-align: center;
+    padding-bottom: 0vh;
+    color: #006400;
+}
+
+.footer .social a {
+    margin-top: 0vh;
+    font-size: 4vh;
+    color: inherit; 
+    width: 6vh;
+    height: 6vh;
+    
+    display: inline-block;
+    text-align: center;
+
+    border-radius: 50%;
+    gap: 5vh;
+    opacity: 1;
+
+}
+
+.footer .social a:hover {
+    opacity: 0.75;
+}
+
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 2.5vh;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.footer ul a {
+    color: #006400;
+    text-decoration: none;
+    opacity: 1;
+
+}
+
+.footer ul a:hover {
+    opacity: 0.75;
+
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+
+/* - tablet version */
+/* break point; only add anything that's new or that is overriding the previous verison */
+@media (min-width: 768px) { 
+    
+    .style-nav ul li {
+        /* show in one line rather than stacked */ 
+        display: inline-block 
+    }
+
+    .style-nav ul {
+        text-align: center;
+    }
+
+    .mobile-only {
+        display:none;
+    }
+
+}
+
+/* - desktop version */
+
+@media (min-width: 1024px) {
+
+    .style-logo {
+        /* moves the image to the left */
+        float: left;
+    }
+
+    .style-nav {
+        float: right;
+        font-size: 20px;
+    }
+
+    .vertical-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    .desk-only {
+        display:block;
+    }
+
+
+    .general-box {
+        padding: 10vh 35vh 10vh 35vh;
+    }
+
+    /*FAST FACTS BOX*/
+    .box-row {
+        display: flex;
+        justify-content: center;
+        gap: 3vh;
+        align-content: stretch;
+
+        margin-bottom: 3vh;
+        
+
+    }
+
+    .g-hover-container {
+        width: 35%;
+    }
+
+    .fun-fact-overlay {
+        border: #006400 .5vh solid;
+        width: 100%;
+
+        height: 50vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .g-hover-container p {
+        font-size: 3vh;
+    }
+
+    h3 {
+        font-size: 3.5vh;
+    }
+    
+    p {
+        font-size: 3vh;
+    }
+    
+
+
+    /* ITEM-SECTION */
+    .item-hover-container {
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    iframe {
+        height: 70vh;
+
+    }
+
+    .item-hover-overlay {
+        opacity: 0;
+    }
+
+    .item-hover-overlay:hover {
+        opacity: 1;
+    }
+
+
+
+    /* TOP HEADING ROW */
+
+    .banner-img {
+        float:right;
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+
+
+
+    .banner-text{
+
+        float: left;
+        text-align: left;
+        width: 45%;
+        height: 100%;
+        margin-top: 10vh;
+
+
+    }
+
+    .banner-text h3 {
+        font-size: 3vh;
+    }
+    
+    .top-banner-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 7vh;
+        height: 60vh;
+
+        padding: 0vh 7vh 0vh 7vh;
+
+
+
+    }
+
+    .entire-list {
+        margin-left: 40%;
+    }
+
+} /* END OF DESKTOP VERSION */
+
+
+
